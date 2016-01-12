@@ -53,8 +53,8 @@
 					<section>
 						<h2>Objectif</h2>
 						<p>
-							Vous rendre 
-							<span class="fragment highlight-blue">organisés</span>, 
+							Vous rendre
+							<span class="fragment highlight-blue">organisés</span>,
 							<span class="fragment highlight-blue">armés</span> et
 							<span class="fragment highlight-blue">autonomes</span>
 							pour apprendre de la <span class="fragment highlight-red">data-science</span> par la pratique.
@@ -98,10 +98,10 @@
 					</section>
 					<section>
 						<p>
-							Git évite de dupliquer du code pour le versioner, permet de revenir en arrière et surtout permet de toujours savoir où on en est.
+							Git évite de dupliquer du code pour le versionner, permet de revenir en arrière et surtout permet de toujours savoir où on en est.
 						</p>
 						<p>
-							Outils indispensable pour organiser son travail sur un gros projet.
+							Outil indispensable pour organiser son travail sur un gros projet.
 						</p>
 					</section>
 					<section>
@@ -168,7 +168,7 @@ nothing to commit (create/copy files and use "git add" to track)
 						<pre><code class="hljs" data-trim contenteditable>
 touch testFile.txt
 						</code></pre>
-						<p>après ce fichier crée, status donne:</p>
+						<p>après ce fichier créé, status donne:</p>
 						<pre><code class="hljs" data-trim contenteditable>
 Untracked files:
 (use "git add <file>..." to include in what will be committed)
@@ -183,7 +183,7 @@ Untracked files:
 						<pre><code class="hljs" data-trim contenteditable>
 git add testFile.txt
 						</code></pre>
-						<p>indique a git qu'on veut le versioner</p>
+						<p>indique à git qu'on veut le versionner</p>
 						<pre><code class="hljs" data-trim contenteditable>
 Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
@@ -208,7 +208,7 @@ git commit -m"added empty file to project"
 
 					<!-- loop -->
 					<section>
-						<p>On itère au fur et a mesure des changements qu'on veut persister :</p>
+						<p>On itère au fur et à mesure des changements qu'on veut persister :</p>
 						<pre><code class="hljs" data-trim contenteditable>
 // on ajoute une ligne au fichier (normalement utiliser l'éditeur)
 echo "hello" > testFile.txt
@@ -288,7 +288,7 @@ git checkout master
 						<pre><code class="hljs" data-trim contenteditable>
 git checkout testFile.txt
 						</code></pre>
-						<p>va remmetre le fichier tel qu'il était au dernier commit. Pour faire la même chose avec tous les fichiers à la fois (dans le cas d'un projet complet): </p>
+						<p>va remettre le fichier tel qu'il était au dernier commit. Pour faire la même chose avec tous les fichiers à la fois (dans le cas d'un projet complet): </p>
 						<pre><code class="hljs" data-trim contenteditable>
 git checkout --hard HEAD
 						</code></pre>
@@ -318,7 +318,7 @@ git branch
 						<pre><code class="hljs" data-trim contenteditable>
 git checkout newVersion
 						</code></pre>
-						<p>ou, si on a déjà fait des modifications, qu'elles parraissent importantes et qu'on veut les séparer sur une nouvelle branche</p>
+						<p>ou, si on a déjà fait des modifications, qu'elles paraissent importantes et qu'on veut les séparer sur une nouvelle branche</p>
 						<pre><code class="hljs" data-trim contenteditable>
 git checkout -b newVersion
 						</code></pre>
@@ -373,14 +373,14 @@ git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short --all
 |/
 * 5bf345a 2016-01-11 | changed hello in bonjour [vallettea]
 * 2dc24bc 2016-01-11 | added hello to the file [vallettea]
-* c04b811 2016-01-11 | added empty file to project [vallettea]						
+* c04b811 2016-01-11 | added empty file to project [vallettea]
 						</code></pre>
 					</section>
 
 					<!-- schema -->
 					<section>
 						<h2>Résumé</h2>
-						<p>Merger sert a faire converger les modifications crées sur les branches vers une version finale.</p>
+						<p>Merger sert a faire converger les modifications créées sur les branches vers une version finale.</p>
 						<img width="300" data-src="https://www.atlassian.com/wac/landing/git/tutorial/pageSections/00/pageSections/02/contentColumnTwo/0/imageBinary/git-tutorial-rewriting-history-1.png" alt="Down arrow">
 					</section>
 
@@ -441,7 +441,7 @@ git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short --all
 						<p>Remote indique le chemin entre ce repo vers un dépot github :</p>
 						<pre><code class="hljs" data-trim contenteditable>
 git remote add anthill https://github.com/anthill/training.git
-git push -u anthill master						
+git push -u anthill master
 						</code></pre>
 						<p>où <code>anthill</code> est le nom du dépot. Un repo peut avoir plusieur remote (voir fork).</p>
 					</section>
@@ -450,7 +450,7 @@ git push -u anthill master
 						<h2>push</h2>
 						<p>Pour synchroniser un repo local avec un remote, on utilise d'une part :</p>
 						<pre><code class="hljs" data-trim contenteditable>
-git push -u anthill master						
+git push -u anthill master
 						</code></pre>
 						<p>où <code>master</code> est le nom de la branche qu'on veut synchroniser. </p>
 						<p><code>push</code> s'utilise lorsque le repo local est en avance sur le remote.</p>
@@ -467,7 +467,7 @@ Total 101 (delta 17), reused 0 (delta 0)
 						<h2>pull</h2>
 						<p>Si le remote est en avance sur le repo local (quelqu'un a ajouté du code) on utilise :</p>
 						<pre><code class="hljs" data-trim contenteditable>
-git pull anthill master						
+git pull anthill master
 						</code></pre>
 						<p>où <code>master</code> est le nom de la branche qu'on veut synchroniser. </p>
 					</section>
@@ -485,9 +485,9 @@ git pull anthill master
 						<p>Un autre dévelopeur veut travailler sur votre code :</p>
 						<img width="700" float="right" data-src="img/github_clone.png">
 						<pre><code class="hljs" data-trim contenteditable>
-git clone https://github.com/anthill/training.git 						
+git clone https://github.com/anthill/training.git
 						</code></pre>
-						<p>va crée une copie locale de votre remote. </p>
+						<p>va créer une copie locale de votre remote. </p>
 						<p><small>(que donne <code>git remote -v</code> ?)</small></p>
 					</section>
 
@@ -502,7 +502,7 @@ git clone https://github.com/anthill/training.git
 					<!-- pull request -->
 					<section>
 						<h2>pull request</h2>
-						<p>Lorsqu'un contributeur estime que les modification de son code devraient être incorporées à la version principale, il met synchronise son remote et crée un <code>pull request</code></p>
+						<p>Lorsqu'un contributeur estime que les modifications de son code devraient être incorporées à la version principale, il synchronise son remote et crée un <code>pull request</code></p>
 						<img width="700" float="right" data-src="https://www.packtpub.com/sites/default/files/Article-Images/B03497_04_01.png">
 					</section>
 
@@ -531,11 +531,15 @@ git clone https://github.com/anthill/training.git
 						</ul>
 					</section>
 
-					
+
 
 				</section>
 
-
+				<!-- Nouvelle diapo  -->
+				<section data-transition="slide" data-background="#66CC99" data-background-transition="zoom">
+					<h1>Nouvelle diapo</h1>
+					<p>ceci est un essai de nouvelle diapo</p>
+				</section>
 			</div>
 
 		</div>
@@ -575,12 +579,12 @@ git clone https://github.com/anthill/training.git
 			});
 
 			// to make iframe background clickable
-			Reveal.addEventListener('slidechanged', function(event) {               
+			Reveal.addEventListener('slidechanged', function(event) {
 			     if($(event.currentSlide).attr('data-background-iframe')) {
 			          $('.reveal > .backgrounds').css('z-index', 1);
 			     } else {
 			          $('.reveal > .backgrounds').css('z-index', 0);
-			     }                  
+			     }
 			});
 
 		</script>
